@@ -1,0 +1,27 @@
+#三戰兩勝剪刀石頭布
+import random 
+computer=['剪刀','石頭','布']
+p=0
+c=0
+while c!=2 and p!=2:
+    play=input('剪刀石頭布:')
+    com = random.choice(computer)
+    if play not in computer:
+        print('有事ㄟ')
+    elif (play=='剪刀' and com=='石頭'
+    or play =='石頭'and com=='布'
+    or play =='布' and com=='剪刀'):
+        print('輸拉')
+        c+=1
+        print('電腦贏', c, 'play' ,p)
+    elif play == com :
+        print('平手')
+        print('電腦贏', c, 'play' ,p)
+    else:
+        print('贏了')
+        p+=1
+        print('電腦贏', c, 'play' ,p)
+if c==2:
+    print('電腦贏了')        
+elif p==2:
+    print('我贏了')
