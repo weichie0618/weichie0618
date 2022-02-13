@@ -1,0 +1,10 @@
+#撲克牌1加到13的合
+
+sum=0
+i=1
+a=0
+while i <=13:
+    print(i ,end="+" )
+    sum+=i
+    i+=1
+print('=',sum)
